@@ -8,6 +8,12 @@ Built for a real person. Their stories, recipes, routines, and people live on yo
 
 Closed chatbots forget. Cloud notebooks feel wrong when the subject is family history. Keepsake keeps the archive at home: hybrid search over growing episodic memory, so every conversation makes the next one more personal.
 
+## Architecture
+
+![Keepsake architecture — ingest, hybrid Tiger memory, local Gemma, Sentry spans](docs/architecture.png)
+
+Stories go in → embeddings land in Tiger Data → hybrid search (vector + keyword) builds the prompt → Gemma 3 answers locally → the exchange is stored so memory grows. Sentry wraps embed, retrieve, and generate.
+
 ## Quickstart
 
 ```bash
