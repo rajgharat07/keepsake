@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tiger": {
+      "command": "npx",
+      "args": ["-y", "@timescale/tiger-mcp"],
+      "env": {
+        "DATABASE_URI": "${DATABASE_URL}"
+      }
+    }
+  }
+}
